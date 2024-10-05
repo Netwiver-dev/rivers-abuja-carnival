@@ -1,6 +1,5 @@
 .main-header{
    position: fixed;
-   /* top: 0%; */
    width: 100%;
    height: 65px;
    display: flex;
@@ -19,7 +18,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   /* border: 1px solid red; */
    color: white;
    font-weight: bold;
    font-size: 1.2rem;
@@ -27,7 +25,7 @@
 }
 
 .main-header .logo-section .logo-box{
-   width: 70px;
+   width: 75px;
    height: auto;
    margin-right: 5px;
 }
@@ -46,7 +44,6 @@
 }
 
 .main-header .nav>a{
-   font-size: 0.95rem;
    padding-inline: 10px;
    color: var(--text-white);
    font-family: "Grandstander", sans-serif;
@@ -54,4 +51,55 @@
 
 .main-header .nav>a:hover{
    color: var(--secondary-color);
+}
+
+.main-header .hamburger-icon{
+   display: none;
+   color: white;
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+
+
+@media screen and (max-width: 950px) {
+   .main-header{
+      overflow: visible;
+   }
+
+   .main-header .hamburger-icon{
+      display: flex;
+   }
+   
+   .main-header .nav{
+      position: absolute;
+      top: 65px;
+      right: 0;
+      width: min(320px, 100%);
+      min-height: 100dvh;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      /* backdrop-filter: blur(5px); */
+      padding-inline: 15px;
+      translate: 100% 0%;
+      transition: 0.3s;
+   }
+
+   .main-header .nav-open{
+      translate: 0% 0%;
+   }
+   
+   .main-header .nav>a{
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: center;
+      margin-block: 2.5px;
+      padding-block: 15px;
+      border-bottom: 1px dashed white;
+   }
+
+   .main-header .nav>a:last-child{
+      border-bottom: none;
+   }
 }

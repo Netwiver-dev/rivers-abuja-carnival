@@ -5,9 +5,33 @@
    flex-direction: column;
    justify-content: flex-start;
    align-items: center;
-   background: url('images/cover-4.webp') no-repeat;
+   background: url('images/cover-1.jpg') no-repeat;
    background-size: cover;
    background-position: center;
+   animation: change-picture 30s infinite;
+}
+
+@keyframes change-picture {
+   0%{
+      background: url('images/cover-1.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
+   25%{
+      background: url('images/cover-2.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
+   50%{
+      background: url('images/cover-3.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
+   75%{
+      background: url('images/cover-4.webp') no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
 }
 
 .hero-section .main-content{
@@ -69,7 +93,12 @@
    background-color: white;
    border-radius: 50%;
    color: black;
-   rotate: -30deg;
+   animation: shake 1s infinite alternate;
+}
+
+@keyframes shake {
+   from { rotate: -40deg; }
+   to{ rotate: 10deg; translate: 5px; }
 }
 
 .hero-section .main-content .powered{

@@ -1,24 +1,27 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import "/src/assets/css/components/header.css";
 
 function Navbar() {
-   const [isOpen, setIsOpen] = useState(false);
-   const menuRef = useRef(null);
+   const [navToggle, setNavToggle] = useState(false);
+   const navRef = useRef(null);
+   const hamburgerRef = useRef(null);
 
-   const toggleMenu = () => {
-      setIsOpen(!isOpen);
+   const toggleNav = () => {
+      setNavToggle(!navToggle);
    };
 
    useEffect(() => {
       const handleClickOutside = (event) => {
-         if (menuRef.current && !menuRef.current.contains(event.target)) {
-            setIsOpen(false);
+         if (navRef.current && 
+            !navRef.current.contains(event.target) &&
+            hamburgerRef.current && 
+            !hamburgerRef.current.contains(event.target)) {
+         setNavToggle(false);
          }
       };
 
       document.addEventListener("mousedown", handleClickOutside);
-
       return () => {
          document.removeEventListener("mousedown", handleClickOutside);
       };
@@ -31,10 +34,10 @@ function Navbar() {
                <img src="logos/rivers-logo.png" alt="Rivers Carnival Logo" />
             </section>
 
-            <span>Rivers Carnival</span>
+            <span>Rivers <br /> Carnival</span>
          </section>
 
-         <nav className="nav">
+         <nav className={`mobile-menu ${navToggle ? "nav nav-open" : "nav"}`} ref={navRef}>
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Objectives</a>
@@ -44,6 +47,10 @@ function Navbar() {
             <a href="#">Gallery</a>
             <a href="#">Contact Us</a>
          </nav>
+
+         <section className="hamburger-icon" ref={hamburgerRef} onClick={toggleNav}>
+            <i className="fa-solid fa-bars"></i>
+         </section>
       </header>
    );
 };
