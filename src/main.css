@@ -1,27 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /* Color Variables */
-:root {
-   --primary-color: #fcfcfc;
-   /* Soft Cream background */
-   --secondary-light: #cf944c;
-   /* Light orange for accents */
-   --secondary-color: #ff7d42;
-   /* Vibrant orange for CTAs */
-   --secondary-dark: #d1495b;
-   /* Bold reddish hue for headers */
-   --secondary-darker: #3d1a29;
-   /* Dark maroon for deep accents */
-   --text-color: #1f1f1f;
-   /* Dark, easy-to-read text color */
-   --overlay-color: rgba(0, 0, 0, 0.6);
-   /* Slightly darker overlay */
+:root {   
+   --primary-color: #2e3092;
+   --secondary-color: #00aeef;
+   --light-green: #55ef03;
+   --dark-green: #3bbc09;
+   --main-red: #ed1c24;
+   --light-orange: #ffcb04;
+   --dark-orange: #f5831f;
+
+   --background-white: #fcfcfc;
+   --text-black: #1f1f1f;
 }
 
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   overflow-x: hidden;
 }
 
 html {
@@ -30,6 +27,6 @@ html {
 
 body {
    font-family: "Poppins", sans-serif;
-   /* Clean, modern font */
-   background-color: var(--primary-color);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: var(--background-white);
 }
