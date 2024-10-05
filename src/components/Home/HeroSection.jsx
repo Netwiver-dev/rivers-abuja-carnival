@@ -16,7 +16,7 @@ function HeroSection() {
             <span className="text">Explore</span>
 
             <span className="icon-box">
-               <i class="fa-solid fa-arrow-right-long"></i>
+               <i className="fa-solid fa-arrow-right-long"></i>
             </span>
          </a>
 
