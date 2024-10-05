@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
 
 /* Color Variables */
 :root {   
@@ -25,8 +25,19 @@ html {
    scroll-behavior: smooth;
 }
 
-body {
-   font-family: "Poppins", sans-serif;
+body, 
+#root {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   /* font-family: "Poppins", sans-serif; */
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    background-color: var(--background-white);
+   color: var(--text-black);
+}
+
+a{
+   text-decoration: none;
+   color: var(--text-black);
 }

@@ -1,0 +1,29 @@
+.main-header{
+   position: sticky;
+   top: 0%;
+   width: 100%;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0px 0px 4px silver;
+   background-color: var(--background-white);
+   padding-inline: 2.5%;
+   padding-top: 10px;
+   z-index: 10;
+}
+
+.main-header .nav{
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+}
+
+.main-header .nav>a{
+   padding-inline: 10px;
+}
+
+.main-header .nav>a:hover{
+   color: var(--secondary-color);
+}
