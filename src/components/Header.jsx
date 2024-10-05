@@ -28,8 +28,10 @@ function Navbar() {
       <header className="main-header">
          <section className="logo-section">
             <section className="logo-box">
-               <img src="" alt="Logo" />
+               <img src="logos/rivers-logo.png" alt="Rivers Carnival Logo" />
             </section>
+
+            <span>Rivers Carnival</span>
          </section>
 
          <nav className="nav">

@@ -1,0 +1,94 @@
+.hero-section{
+   width: 100%;
+   min-height: 100dvh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   background: url('images/cover-5.webp') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.hero-section .main-content{
+   padding-top: 65px;
+   padding-bottom: 10px;
+   width: 100%;
+   min-height: 100dvh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .main-content>h1{
+   font-size: clamp(1.3rem, 2vw + 3rem, 5rem);
+   text-align: center;
+   margin-top: 100px;
+   margin-bottom: 10px;
+   color: var(--text-white);
+   font-family: "Grandstander", sans-serif;
+}
+
+.hero-section .main-content>p{
+   font-size: 1.5rem;
+   color: rgba(255, 255, 255, 0.85);
+   margin-bottom: 30px;
+   text-align: center;
+   padding-inline: 5px;
+   font-style: italic;
+}
+
+.hero-section .main-content>a{
+   width: min(250px, 80%);
+   min-width: max-content;
+   height: 54px;
+   background-color: black;
+   border-radius: 50px;
+   border: 2px solid white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--light-green);
+   font-weight: bold;
+   margin-bottom: 50px;
+}
+
+.hero-section .main-content>a .text{
+   margin-right: 10px;
+   font-size: 1.15rem;
+}
+
+.hero-section .main-content>a .icon-box{
+   width: 33px;
+   height: 33px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border-radius: 50%;
+   color: black;
+   rotate: -30deg;
+}
+
+.hero-section .main-content .powered{
+   display: flex;
+   font-size: 1.1rem;
+   font-weight: bold;
+   color: rgba(255, 255, 255, 0.85);
+   align-items: center;
+   align-self: flex-end;
+   margin-right: 2.5vw;
+}
+
+.hero-section .main-content .powered .image-section{
+   width: 50px;
+   height: auto;
+   margin-left: 10px;
+}
+
+.hero-section .main-content .powered .image-section>img{
+   width: 100%;
+   height: fit-content;
+}
