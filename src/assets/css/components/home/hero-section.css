@@ -80,7 +80,7 @@
 }
 
 .hero-section .main-content>a .text{
-   margin-right: 10px;
+   margin-right: 8px;
    font-size: 1.15rem;
 }
 
@@ -97,7 +97,7 @@
 }
 
 @keyframes shake {
-   from { rotate: -40deg; }
+   from { rotate: -50deg; }
    to{ rotate: 10deg; translate: 5px; }
 }
 

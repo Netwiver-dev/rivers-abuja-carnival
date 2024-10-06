@@ -1,1 +1,40 @@
-/* Not needed that much */
+.main-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   padding-block: 80px;
+   padding-inline: max(2.5%, 15px);
+}
+
+.main-section .heading{
+   font-size: clamp(1.4rem, 1.5vw + 1.5rem, 3rem);
+   margin-bottom: 40px;
+   font-family: "Grandstander", sans-serif;
+   background-clip: text;
+   text-align: center;
+}
+
+.main-section .heading>span{
+   color: var(--dark-orange);
+   color: var(--dark-green);
+   color: var(--primary-color);
+   color: var(--secondary-color);
+   color: var(--main-red);
+}
+
+.writeup{
+   line-height: 1.5;
+   color: #3a3a3a;
+}
+
+.writeup>h4{
+   margin-bottom: 5px;
+}
+
+.writeup>ul>li{
+   margin-left: 1.5rem;
+   overflow: visible;
+}
