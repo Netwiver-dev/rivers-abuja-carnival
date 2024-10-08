@@ -38,12 +38,12 @@ function Navbar() {
          </section>
 
          <nav className={`mobile-menu ${navToggle ? "nav nav-open" : "nav"}`} ref={navRef}>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#objective">Objectives</a>
-            <a href="#event">Events</a>
-            <a href="#sponsor">Sponsor</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#home" onClick={toggleNav}>Home</a>
+            <a href="#about" onClick={toggleNav}>About</a>
+            <a href="#objective" onClick={toggleNav}>Objectives</a>
+            <a href="#event" onClick={toggleNav}>Events</a>
+            <a href="#sponsor" onClick={toggleNav}>Sponsor</a>
+            <a href="#contact" onClick={toggleNav}>Contact Us</a>
          </nav>
 
          <section className="hamburger-icon" ref={hamburgerRef} onClick={toggleNav}>

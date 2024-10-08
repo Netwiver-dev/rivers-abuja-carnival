@@ -11,7 +11,7 @@ function AboutSection() {
             <img src="images/about-1.jpg" alt="" />
          </section>
 
-         <p className="writeup">
+         <section className="writeup">
             The Rivers State International Cultural Carnival Abuja <strong className="highlight">(RICCA) 1.0</strong> is designed to 
             showcase and promote the rich cultural heritage of the Rivers People. This event 
             brings together the diverse languages, customs, norms, values, and traditions of 
@@ -35,7 +35,7 @@ function AboutSection() {
                a platform for artistic and cultural expression. We aim to celebrate the identity of 
                the Rivers People and promote unity, peace, and cultural exchange
             </p> */}
-         </p>
+         </section>
       </section>
     </div>
   );
