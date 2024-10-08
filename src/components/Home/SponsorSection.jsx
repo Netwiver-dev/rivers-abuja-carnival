@@ -9,7 +9,7 @@ function AboutSection() {
       <section className="main-content">
          <h2>Partner with us and showcase your brand while supporting cultural preservation</h2>
 
-         <h4>Bank Details</h4>
+         {/* <h4>Bank Details</h4> */}
          <p>
             B-BRAND MEDIA AFRICA
             <br />
@@ -18,7 +18,7 @@ function AboutSection() {
             FCMB 
          </p>
 
-         <a href="">Sponsor Us</a>
+         <p className="catchy">Sponsor US</p>
       </section>
     </div>
   );
