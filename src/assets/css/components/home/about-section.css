@@ -18,7 +18,7 @@
 .about-section .main-content .image-section>img{
    width: 100%;
    height: fit-content;
-   aspect-ratio: 1 / 0.9;
+   aspect-ratio: 1 / 0.8;
    object-fit: cover;
 }
 

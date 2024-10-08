@@ -1,0 +1,93 @@
+.events-section .main-content{
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+   flex-wrap: wrap;
+   margin: auto;
+}
+
+.events-section .main-content>*{
+   width: 48%;
+}
+
+.events-section .main-content .event-box{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-start;
+   padding-block: 35px;
+   padding-inline: 25px;
+   border: 1px solid silver;
+   border-radius: 10px;
+   margin: auto;
+   margin-bottom: 20px;
+   aspect-ratio: 1/0.5;
+   color: white;
+   background: url('images/cover-1.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+   z-index: 1;
+}
+
+.events-section .main-content .event-box:nth-child(1){
+   background: url('images/canoe.png') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-section .main-content .event-box:nth-child(2){
+   background: url('images/cultural.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-section .main-content .event-box:nth-child(3){
+   background: url('images/party.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-section .main-content .event-box:nth-child(4){
+   background: url('images/music.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-section .main-content .event-box:nth-child(5){
+   background: url('images/thanksgiving.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-section .main-content .event-box::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.4);
+   z-index: -1;
+}
+
+.events-section .main-content .event-box>h4{
+   margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+   .events-section .main-content>*{
+      width: 100%;
+   }
+   
+   .events-section .main-content .image-section{
+      margin-bottom: 30px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .events-section .main-content .event-box{
+      aspect-ratio: 1/0.7;
+   }
+}

@@ -3,6 +3,7 @@ import "/src/assets/css/components/home/hero-section.css";
 function HeroSection() {
   return (
     <div className="hero-section">
+      <a name="home"></a>
       <section className="main-content">
          <h1>
             Rivers State International <br />

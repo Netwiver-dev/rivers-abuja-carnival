@@ -3,7 +3,8 @@ import "/src/assets/css/components/home/about-section.css";
 function AboutSection() {
   return (
     <div className="main-section about-section">
-      <h2 className="heading">About <span>Us</span></h2>
+      <a name="about"></a>
+      <h2 className="heading">About Us</h2>
 
       <section className="main-content">
          <section className="image-section">
@@ -11,7 +12,7 @@ function AboutSection() {
          </section>
 
          <p className="writeup">
-            The Rivers State International Cultural Carnival Abuja (RICCA) 1.0 is designed to 
+            The Rivers State International Cultural Carnival Abuja <strong className="highlight">(RICCA) 1.0</strong> is designed to 
             showcase and promote the rich cultural heritage of the Rivers People. This event 
             brings together the diverse languages, customs, norms, values, and traditions of 
             our ethnic nationalities, including Opobo/Nkoro, Bonny, Ikwerre, Ogoni, and many more. 
@@ -28,6 +29,12 @@ function AboutSection() {
                <li>Nollywood celebrity appearances</li>
                <li>Award presentations</li>
             </ul>
+
+            {/* <p>
+               <strong className="bold">Our vision</strong> is to foster a sense of community, promote cultural tourism, and provide 
+               a platform for artistic and cultural expression. We aim to celebrate the identity of 
+               the Rivers People and promote unity, peace, and cultural exchange
+            </p> */}
          </p>
       </section>
     </div>

@@ -1,0 +1,98 @@
+.sponsor-section{
+   padding-inline: 0px;
+}
+
+.sponsor-section .main-content{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   background: linear-gradient(90deg, var(--primary-color), var(--dark-green));
+   padding-inline: max(2.5%, 10px);
+   padding-block: 60px;
+}
+
+.sponsor-section .main-content>h2{
+   font-size: clamp(1.4rem, 1.5vw + 1.5rem, 3rem);
+   color: var(--text-white);
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.sponsor-section .main-content>h4{
+   margin-bottom: 10px;
+   font-size: clamp(1.4rem, 1.5vw + 1.5rem, 2rem);
+   background: linear-gradient(90deg, rgb(18, 18, 18), rgb(62, 62, 62) );
+   background-clip: text;
+   color: transparent;
+}
+
+.sponsor-section .main-content>p{
+   color: var(--text-white);
+   font-family: "Grandstander", sans-serif;
+   font-size: clamp(1.4rem, 1.5vw + 1.5rem, 2rem);
+   margin-bottom: 40px;
+   text-align: center;
+}
+
+.sponsor-section .main-content>a{
+   font-weight: lighter;
+   width: min(80%, 250px);
+   height: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: uppercase;
+   position: relative;
+   background-color: transparent;
+   z-index: 1;
+   overflow: visible;
+   color: var(--light-orange);
+   /* border: 1px solid red; */
+}
+
+.sponsor-section .main-content>a::before{
+   content: " ";
+   position: absolute;
+   top: -4px;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.sponsor-section .main-content>a::after{
+   content: " ";
+   position: absolute;
+   top: -4px;
+   left: -4px;
+   width: 4px;
+   height: 4px;
+   background-color: var(--text-white);
+   z-index: -1;
+   animation: move 5s infinite;
+}
+
+@keyframes move {
+   0%{
+      top: -4px;
+      left: -4px;
+   }
+   25%{
+      top: -4px;
+      left: 100%;
+   }
+   50%{
+      top: 100%;
+      left: 100%;
+   }
+   75%{
+      top: 100%;
+      left: -4px;
+   }
+}

@@ -90,9 +90,9 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: white;
+   background-color: var(--text-white);
    border-radius: 50%;
-   color: black;
+   color: var(--text-black);
    animation: shake 1s infinite alternate;
 }
 

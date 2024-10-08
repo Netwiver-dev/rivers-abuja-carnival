@@ -1,0 +1,38 @@
+.objectives-section .main-content{
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+   flex-wrap: wrap;
+   margin: auto;
+}
+
+.objectives-section .main-content>*{
+   width: 48%;
+}
+
+.objectives-section .main-content .box{
+   padding-block: 35px;
+   padding-inline: 25px;
+   border: 1px solid silver;
+   border-radius: 10px;
+   background-color: #eeecec;
+   margin: auto;
+   margin-bottom: 20px;
+}
+
+.objectives-section .main-content .box>h4{
+   margin-bottom: 10px;
+   padding-left: 5px;
+   border-left: 3px solid var(--dark-orange);
+}
+
+
+@media screen and (max-width: 1000px) {
+   .objectives-section .main-content>*{
+      width: 100%;
+   }
+
+   .objectives-section .main-content .image-section{
+      margin-bottom: 30px;
+   }
+}
