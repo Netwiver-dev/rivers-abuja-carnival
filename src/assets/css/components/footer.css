@@ -1,0 +1,35 @@
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .powered-by {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .company-logo {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-top: 10px;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 40px;
+    word-spacing: 2px;
+  }
+  

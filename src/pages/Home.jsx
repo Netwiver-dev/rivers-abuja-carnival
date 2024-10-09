@@ -13,17 +13,13 @@ function Home() {
   return (
     <div>
       <Header />
-
       <HeroSection />
       <AboutSection />
       <ObjectivesSection />
       <EventsSection />
       <SponsorSection />
       <ContactUsSection />
-      
-
-
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
