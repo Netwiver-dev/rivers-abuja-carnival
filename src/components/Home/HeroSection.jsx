@@ -13,7 +13,7 @@ function HeroSection() {
 
          <p>...Celebrating Our Diversity and Rich Cultural Heritage</p>
 
-         <a href="#">
+         <a href="#about">
             <span className="text">Explore</span>
 
             <span className="icon-box">
