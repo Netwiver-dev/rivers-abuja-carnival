@@ -61,17 +61,7 @@ function AboutSection() {
       <section className="contact-form-section">
         <div className="left-side">
           <img src="/images/Rivers Carnival Group pic.jpeg" alt="Rivers Carnival Group Abuja" className="company-image" />
-          <div className="social-icons">
-            <a href="https://facebook.com/Rivcomabuja/" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-        </div>
+          
       </div>
 
         <div className="right-side">
