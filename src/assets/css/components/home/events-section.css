@@ -35,40 +35,40 @@
 .events-section .main-content .event-box:nth-child(1){
    --day: "5th";
    background: url('../images/canoe.png') no-repeat;
-   background-size: 100%;
+   background-size: 110%;
    background-position: center;
 }
 
 .events-section .main-content .event-box:nth-child(2){
    --day: "6th";
    background: url('../images/cultural.jpg') no-repeat;
-   background-size: 100%;
+   background-size: 110%;
    background-position: center;
 }
 
 .events-section .main-content .event-box:nth-child(3){
    --day: "7th";
    background: url('../images/party.jpg') no-repeat;
-   background-size: 100%;
+   background-size: 110%;
    background-position: center;
 }
 
 .events-section .main-content .event-box:nth-child(4){
    --day: "7th";
    background: url('../images/music.jpg') no-repeat;
-   background-size: 100%;
+   background-size: 110%;
    background-position: center;
 }
 
 .events-section .main-content .event-box:nth-child(5){
    --day: "8th";
    background: url('../images/thanksgiving.jpg') no-repeat;
-   background-size: 100%;
+   background-size: 110%;
    background-position: center;
 }
 
 .events-section .main-content .event-box:hover{
-   background-size: 120%;
+   background-size: 125%;
 }
 
 .events-section .main-content .event-box::after{
@@ -94,7 +94,8 @@
 }
 
 .events-section .main-content .event-box:hover::before{
-   background-color: rgba(0, 0, 0, 0.6);  
+   background-color: rgba(0, 0, 0, 0.6); 
+   backdrop-filter: blur(2px);
 }
 
 .events-section .main-content .event-box>h4{
