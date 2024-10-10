@@ -16,8 +16,8 @@
    flex-direction: column;
    justify-content: flex-end;
    align-items: flex-start;
-   padding-block: 35px;
-   padding-inline: 25px;
+   padding-block: max(2.5%, 20px);
+   padding-inline: max(15px, 2.5%);
    border: 1px solid silver;
    border-radius: 10px;
    margin: auto;
@@ -29,6 +29,7 @@
    background-position: center;
    z-index: 1;
    transition: 0.5s;
+   font-size: 1.05rem;
 }
 
 .events-section .main-content .event-box:nth-child(1){
@@ -88,8 +89,12 @@
    height: 100%;
    top: 0;
    left: 0;
-   background-color: rgba(0, 0, 0, 0.4);
+   background-color: rgba(0, 0, 0, 0.5);
    z-index: -1;
+}
+
+.events-section .main-content .event-box:hover::before{
+   background-color: rgba(0, 0, 0, 0.6);  
 }
 
 .events-section .main-content .event-box>h4{
@@ -109,6 +114,12 @@
 
 @media screen and (max-width: 600px) {
    .events-section .main-content .event-box{
-      aspect-ratio: 1/0.7;
+      aspect-ratio: 1/0.6;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .events-section .main-content .event-box{
+      aspect-ratio: 1/0.75;
    }
 }
