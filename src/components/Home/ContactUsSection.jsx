@@ -4,15 +4,44 @@ import "/src/assets/css/components/home/contact-us-section.css";
 function AboutSection() {
  
   const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
+  const [fullname, setFullname] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
+   const updateMessage = (event) => {
+      setMessage(event.target.value);
+   };
+   const updateEmail = (event) => {
+      setEmail(event.target.value);
+   };
+   const updateFullname = (event) => {
+      setFullname(event.target.value);
+   };
+  
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission
+    sendEmail(fullname, email, message)
     setIsModalOpen(true); // Show the modal
   };
 
   const closeModal = () => {
     setIsModalOpen(false); // Hide the modal
   };
+
+  function sendEmail(fullname, email, message) {
+   var subject = `Sponsorship Request from ${fullname}`;
+ 
+   var body = `Dear B-brand Agent,\n\n`;
+   body += `Client's Name: ${fullname}\n`;
+   body += `Client's Email: ${email}\n\n`;
+   body += `Message:\n${message.replace(/\n/g, "%0A")}`;
+ 
+   var mailToLink = `mailto:bardirealestateltd@gmail.com?subject=${encodeURIComponent(
+     subject
+   )}&body=${encodeURIComponent(body)}`;
+ 
+   window.location.href = mailToLink;
+ }
 
   return (
     <div className="main-section objectives-section">
@@ -69,11 +98,11 @@ function AboutSection() {
           <p>Submit your proposal and join us in promoting culture and diversity!</p>
 
           <form onSubmit={handleSubmit}>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <input type="text" id="name" name="name" placeholder="Your name" required value={fullname} onChange={updateFullname} />
 
-            <input type="email" id="email" name="email" placeholder="Your email" required />
+            <input type="email" id="email" name="email" placeholder="Your email" required value={email} onChange={updateEmail} />
 
-            <textarea id="message" name="message" placeholder="Tell us about your proposal..." required></textarea>
+            <textarea id="message" name="message" placeholder="Tell us about your proposal..." required value={message} onChange={updateMessage} ></textarea>
 
             <button type="submit" className="submit-btn">Submit</button>
           </form>
@@ -84,7 +113,7 @@ function AboutSection() {
         <div className="modal">
           <div className="modal-content">
             <span className="close" onClick={closeModal}>&times;</span>
-            <p>We have received your message! <br/> <br/> Thank you for your interest, expect to hear from us soon.</p>
+            <p>Thank you for your interest to sponsor! <br/> <br/> We will redirect you shortly.</p>
           </div>
         </div>
       )}
