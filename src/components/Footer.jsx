@@ -37,7 +37,7 @@ function Footer() {
         
         
         <div className="left-footer">
-          <img src="/images/RiversCom.jpeg" alt="B-Brand Media Company Logo" className="company-logo" />
+          <img src="logos/rivers-logo.png" alt="B-Brand Media Company Logo" className="company-logo" />
           <p className="heritage-text">Celebrating our diversity and rich cultural heritage</p>
         </div>
 

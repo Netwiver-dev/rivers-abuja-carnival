@@ -1,10 +1,15 @@
 
    .company-logo {
-    width: 100px; 
-    height: 100px;
-    border-radius: 50%;
+    width: 120px; 
+    height: auto;
+    /* border-radius: 50%; */
     object-fit: cover; 
     margin-top: 10px;
+  }
+
+  .company-logo>img {
+   width: 100%;
+   height: fit-content;
   }
 
   .heritage-text {
@@ -190,8 +195,7 @@
 /* Extra small screens (mobile, less than 576px) */
 @media (max-width: 576px) {
   .company-logo {
-    width: 80px;
-    height: 80px;
+    width: 95px;
   }
 
   .footer {
