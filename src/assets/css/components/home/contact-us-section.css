@@ -68,7 +68,7 @@
   .contact-form-section {
     display: flex;
     height: auto;
-    width: min(800px, 95%);
+    width: min(850px, 95%);
     margin-inline: 50%;
     justify-content: space-between;
     border: none;
