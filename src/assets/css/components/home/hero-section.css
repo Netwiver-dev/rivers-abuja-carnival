@@ -5,7 +5,6 @@
    flex-direction: column;
    justify-content: flex-start;
    align-items: center;
-   background: url('./images/cover-1.jpg') no-repeat black;
    background-size: cover;
    background-position: center;
    animation: change-picture 30s infinite;
@@ -29,6 +28,11 @@
    }
    75%{
       background: url('../images/cover-4.jpg') no-repeat black;
+      background-size: cover;
+      background-position: center;
+   }
+   100%{
+      background: url('../images/cover-1.jpg') no-repeat black;
       background-size: cover;
       background-position: center;
    }
